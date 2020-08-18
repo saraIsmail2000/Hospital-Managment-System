@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="446.0" prefWidth="621.0" style="-fx-background-color : white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.NurseController">
+    <children>
+        <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <tabs>
+                <Tab style="-fx-background-color : lightblue;&#10;" text="Add Nurse">
+                    <content>
+
+                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-image: url('file:///C:/Users/HP-PC/Desktop/Hospital%20pics/depositphotos_118776688-stock-photo-beautiful-doctor-woman-over-hospital.jpg'); -fx-background-size: cover;">
+                            <children>
+                                <BorderPane>
+                                    <top>
+
+                                        <AnchorPane prefHeight="39.0" prefWidth="600.0" AnchorPane.bottomAnchor="391.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <children>
+                                                <VBox prefHeight="53.0" prefWidth="600.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                    <children>
+                                                        <Label prefHeight="40.0" prefWidth="193.0" text="">
+                                                            <font>
+                                                                <Font name="System Bold Italic" size="36.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </VBox>
+                                            </children>
+                                        </AnchorPane>
+                                    </top>
+                                    <center>
+                                        <HBox alignment="CENTER" layoutX="155.0" prefHeight="231.0" prefWidth="534.0">
+                                            <children>
+                                                <AnchorPane prefHeight="308.0" prefWidth="265.0">
+                                                    <children>
+                                                        <Label layoutX="12.0" layoutY="62.0" text="Name">
+                                                            <font>
+                                                                <Font name="System Bold" size="18.0" />
+                                                            </font></Label>
+                                                        <Label layoutX="14.0" layoutY="145.0" text="Ward">
+                                                            <font>
+                                                                <Font name="System Bold" size="18.0" />
+                                                            </font></Label>
+                                                        <Label layoutX="12.0" layoutY="106.0" prefHeight="27.0" prefWidth="65.0" text="Gender">
+                                                            <font>
+                                                                <Font name="System Bold" size="18.0" />
+                                                            </font></Label>
+                                                        <TextField fx:id="nurseName" layoutX="70.0" layoutY="63.0" prefHeight="26.0" prefWidth="196.0" />
+                                                        <Button fx:id="addbutton" layoutX="80.0" layoutY="233.0" mnemonicParsing="false" onAction="#addNurse" prefHeight="36.0" prefWidth="107.0" style="-fx-background-color: lightblue;" text="Add">
+                                                            <font>
+                                                                <Font name="System Bold Italic" size="18.0" />
+                                                            </font>
+                                                        </Button>
+                                                        <Label layoutX="14.0" layoutY="185.0" prefHeight="27.0" prefWidth="85.0" text="Start date">
+                                                            <font>
+                                                                <Font name="System Bold" size="18.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <DatePicker fx:id="sDate" layoutX="106.0" layoutY="186.0" prefHeight="25.0" prefWidth="159.0" />
+                                          <RadioButton layoutX="109.0" layoutY="111.0" mnemonicParsing="false" text="Male" toggleGroup="$gender">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                              <toggleGroup>
+                                                  <ToggleGroup fx:id="gender" />
+                                              </toggleGroup>
+                                          </RadioButton>
+                                          <RadioButton layoutX="185.0" layoutY="110.0" mnemonicParsing="false" text="Female" toggleGroup="$gender">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </RadioButton>
+
+                                                        <ComboBox fx:id="combobox" layoutX="100.0" layoutY="146.0" prefHeight="25.0" prefWidth="171.0">
+
+                                                        </ComboBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </children>
+                                        </HBox>
+                                    </center>
+                                </BorderPane>
+                                <VBox alignment="BOTTOM_LEFT" layoutY="382.0" prefHeight="36.0" prefWidth="621.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="382.0">
+                                    <children>
+                                        <Button fx:id="back" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="59.0" style="-fx-background-color: black;" text="Back" textFill="#f8f7f7">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </VBox>
+                            </children>
+
+                        </AnchorPane>
+
+
+                    </content>
+                </Tab>
+                <Tab style="-fx-background-color : lightblue;" text="View Working Nurses">
+                    <content>
+                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <TableView fx:id="NursesTable" editable="true" prefHeight="388.0" prefWidth="621.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+                            <columns>
+                                <TableColumn fx:id="FullName" prefWidth="82.0" text="Full Name" />
+                                <TableColumn fx:id="Gender" prefWidth="88.0" text="Gender" />
+                                <TableColumn fx:id="JoiningDate" prefWidth="133.0" text="Joining Date" />
+                                <TableColumn fx:id="ward" prefWidth="91.0" text="Ward" />
+                                <TableColumn fx:id="floor" text="Floor" />
+
+                            </columns>
+
+                        </TableView>
+                            <VBox alignment="BOTTOM_LEFT" layoutY="382.0" prefHeight="36.0" prefWidth="621.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="382.0">
+                                <children>
+                                    <Button fx:id="Back" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="58.0" style="-fx-background-color: black;" text="Back" textFill="#f8f7f7">
+                                        <font>
+                                            <Font name="System Bold" size="14.0" />
+                                        </font>
+                                    </Button>
+                                </children>
+                            </VBox>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

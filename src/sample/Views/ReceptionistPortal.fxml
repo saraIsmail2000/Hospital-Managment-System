@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="457.0" prefWidth="647.0" style="-fx-background-image: url('file:///C:/Users/HP-PC/Desktop/Hospital%20pics/unnamed.jpg'); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.PortalsController">
+   <children>
+      
+      <VBox layoutY="2.0" prefHeight="51.0" prefWidth="670.0" AnchorPane.bottomAnchor="428.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Label layoutX="26.0" layoutY="32.0" prefHeight="53.0" prefWidth="333.0" text="Receptionist Portal" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="333.0" AnchorPane.topAnchor="32.0">
+            <font>
+               <Font name="System Bold Italic" size="36.0" />
+            </font></Label>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="289.0" layoutY="-6.0" prefHeight="481.0" prefWidth="299.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="289.0" AnchorPane.rightAnchor="99.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <AnchorPane prefHeight="301.0" prefWidth="300.0">
+                  <Button fx:id="RbuttonProfile" alignment="CENTER" layoutX="-2.0" layoutY="49.0" mnemonicParsing="false" onAction="#ViewRecProfile" prefHeight="51.0" prefWidth="302.0" style="-fx-background-color: white;" text="View My Profile" textAlignment="CENTER" textFill="#000000fd">
+                        <font>
+                           <Font name="System Bold Italic" size="24.0" />
+                        </font>
+                     </Button>
+                      <Button fx:id="buttonPatients" alignment="CENTER" contentDisplay="RIGHT" layoutX="-2.0" layoutY="124.0" mnemonicParsing="false" onAction="#patientsDetails" prefHeight="39.0" prefWidth="302.0" style="-fx-background-color: white;" text="Patients Details" textAlignment="CENTER">
+                          <font>
+                         <Font name="System Bold Italic" size="24.0" />
+                        </font>
+                     </Button>
+                      <Button fx:id="Rlogout" alignment="CENTER" layoutX="92.0" layoutY="273.0" mnemonicParsing="false" onAction="#Logout" prefHeight="39.0" prefWidth="114.0" style="-fx-background-color: lightblue;" text="Logout" textAlignment="CENTER">
+                          <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                          </font>
+                     </Button>
+                      <Button fx:id="buttonApp" alignment="CENTER" contentDisplay="RIGHT" layoutX="-2.0" layoutY="195.0" mnemonicParsing="false" onAction="#appointments" prefHeight="51.0" prefWidth="302.0" style="-fx-background-color: white;" text="Appointments" textAlignment="CENTER">
+                        <font>
+                           <Font name="System Bold Italic" size="24.0" />
+                        </font>
+                     </Button>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+
+
+    
+   
+   </children>
+</AnchorPane>

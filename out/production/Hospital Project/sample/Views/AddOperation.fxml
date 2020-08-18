@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.AddOperation">
+   <children>
+      <AnchorPane prefHeight="26.0" prefWidth="600.0" style="-fx-background-color: lightblue;">
+         <children>
+            <Label layoutX="14.0" layoutY="8.0" prefHeight="39.0" prefWidth="245.0" text="Add Operation ">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <HBox alignment="CENTER_RIGHT" layoutX="196.0" prefHeight="455.0" prefWidth="323.0">
+         <children>
+            <AnchorPane prefHeight="455.0" prefWidth="349.0">
+               <children>
+                  <Label layoutX="40.0" layoutY="359.0" prefHeight="18.0" prefWidth="56.0" text="Date" />
+                  <Label layoutX="40.0" layoutY="250.0" text="Doctor Name" />
+                  <Label layoutX="40.0" layoutY="308.0" prefHeight="18.0" prefWidth="107.0" text="Operation time" />
+                  <DatePicker layoutX="156.0" layoutY="355.0" prefHeight="26.0" prefWidth="214.0" />
+                  <TextField layoutX="156.0" layoutY="304.0" prefHeight="26.0" prefWidth="214.0" />
+                  <Button alignment="CENTER" layoutX="254.0" layoutY="402.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="116.0" style="-fx-background-color: lightblue; -fx-alignment: right;" text="ok">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font></Button>
+                  <TextField layoutX="156.0" layoutY="246.0" prefHeight="26.0" prefWidth="214.0" />
+                  <Label layoutX="40.0" layoutY="195.0" text="Patient Name" />
+                  <TextField layoutX="156.0" layoutY="190.0" prefHeight="26.0" prefWidth="214.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

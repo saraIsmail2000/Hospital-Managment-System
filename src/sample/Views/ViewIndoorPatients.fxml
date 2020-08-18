@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600" prefWidth="1000" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.ViewIndoor">
+    <children>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <TableView fx:id="patientsTable" editable="true" prefHeight="541.0" prefWidth="1000.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+                <columns>
+
+                    <TableColumn fx:id="Name" prefWidth="107.00001525878906" text="Patient Name" />
+                    <TableColumn fx:id="Phone" prefWidth="100.0" text="Phone Number" />
+                    <TableColumn fx:id="Gender" prefWidth="50.0" text="Gender" />
+                    <TableColumn fx:id="Ward" prefWidth="85.0" text="Ward" />
+                    <TableColumn fx:id="Room" prefWidth="69.0" text="Room" />
+                    <TableColumn fx:id="Admit" prefWidth="73.0" text="Admit Date" />
+
+                </columns>
+            </TableView>
+            <VBox alignment="BOTTOM_LEFT" layoutY="539.0" prefHeight="32.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="539.0">
+                <children>
+                    <Button fx:id="back" mnemonicParsing="false" onAction="#back" prefHeight="10.0" prefWidth="66.0" style="-fx-background-color: black;" text="Back" textFill="#f8f7f7">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font>
+                    </Button>
+                </children>
+            </VBox>
+
+
+        </AnchorPane>
+
+    </children>
+
+</AnchorPane>

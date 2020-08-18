@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="473.0" prefWidth="646.0" style="-fx-background-image: url('file:///C:/Users/HP-PC/Desktop/Hospital%20pics/1326-hospital-interior-corridor-blurred-background.jpg');              -fx-background-size: cover;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.PortalsController">
+    <children>
+      <BorderPane prefHeight="540.0" prefWidth="646.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+          <top>
+              <VBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="646.0" style="-fx-background-color: lightblue;">
+                  <children>
+                 <Label text="Admin Portal" wrapText="false" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+              <font>
+                  <Font name="Arial Rounded MT Bold" size="30.0" />
+              </font>
+               </Label>
+                  </children>
+              </VBox>
+
+        </top>
+          <center>
+              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                  <children>
+                      <VBox alignment="CENTER">
+                          <children>
+
+                              <AnchorPane fx:id="patients" onMouseClicked="#patientsClicked" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: url('file:///C:/Users/HP-PC/Desktop/Hospital%20pics/patients.jpg'); -fx-background-size: cover; -fx-padding: 25px; -fx-background-origin: padding-box;">
+                           <cursor>
+                              <Cursor fx:constant="E_RESIZE" />
+                           </cursor></AnchorPane>
+                          <Label contentDisplay="CENTER" prefHeight="33.0" prefWidth="187.0" style="-fx-background-color : lightblue;&#10; -fx-alignment: center;&#10;  -fx-padding: 5px;&#10;    -fx-border-insets: 5px;&#10;    -fx-background-insets: 5px;&#10;   -fx-font: normal bold 20px 'serif';&#10;    -fx-border : 2px solid black;" text="Patients">
+                              <font>
+                                  <Font name="System Bold Italic" size="20.0" fx:id="x2" />
+                              </font>
+                              <textFill>
+                                  <Color red="0.200" green="0.000" blue="0.096" fx:id="x4" />
+                              </textFill>
+                          </Label>
+<!--                          <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">-->
+<!--                              <image>-->
+<!--                                  <Image url="@../images/doctors.jpg" /></image>-->
+<!--                          </ImageView>-->
+                              <AnchorPane fx:id="doctors" onMouseClicked="#doctorsClicked" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: url('file:///C:/Users/HP-PC/Desktop/Hospital%20pics/doctors.jpg'); -fx-background-size: cover">
+
+                              </AnchorPane>
+                          <Label font="$x2" prefHeight="33.0" prefWidth="188.0" style="-fx-background-color : lightblue;&#10; -fx-alignment: center;&#10;   -fx-padding: 5px;&#10;    -fx-border-insets: 5px;&#10;    -fx-background-insets: 5px;&#10;   -fx-font: normal bold 20px 'serif';&#10;    -fx-border : 2px solid black;" text="Doctors">
+                              <textFill>
+                                  <Color red="0.200" green="0.000" blue="0.096" fx:id="x5" />
+                              </textFill></Label>
+                          </children>
+                      </VBox>
+                      <VBox alignment="CENTER">
+                          <children>
+                              <AnchorPane fx:id="receptionists" onMouseClicked="#receptionistsClicked" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: url('file:///C:/Users/HP-PC/Desktop/Hospital%20pics/recep.jpg'); -fx-background-size: cover">
+
+                              </AnchorPane>
+                              <Label font="$x2" prefHeight="33.0" prefWidth="186.0" style="-fx-background-color : lightblue;&#10; -fx-alignment: center;&#10;   -fx-padding: 5px;&#10;    -fx-border-insets: 5px;&#10;    -fx-background-insets: 5px;&#10;   -fx-font: normal bold 20px 'serif';&#10;    -fx-border : 2px solid black;" text="Receptionists" textFill="#330018" />
+<!--                          <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">-->
+<!--                              <image>-->
+<!--                                  <Image url="@../images/nurse.jpg" /></image>-->
+<!--                          </ImageView>-->
+                              <AnchorPane fx:id="nurses" onMouseClicked="#nursesClicked" prefHeight="200.0" prefWidth="185.0" style="-fx-background-image: url('file:///C:/Users/HP-PC/Desktop/Hospital%20pics/nurse.jpg'); -fx-background-size: cover; -fx-background-position: center;">
+
+                              </AnchorPane>
+                          <Label font="$x2" prefHeight="33.0" prefWidth="187.0" style="-fx-background-color : lightblue;&#10; -fx-alignment: center;&#10;   -fx-padding: 5px;&#10;    -fx-border-insets: 5px;&#10;    -fx-background-insets: 5px;&#10;   -fx-font: normal bold 20px 'serif';&#10; " text="Nurses">
+                              <textFill>
+                                  <Color red="0.200" green="0.000" blue="0.096" fx:id="x7" />
+                              </textFill></Label>
+                          </children>
+                      </VBox>
+                  </children>
+              </HBox>
+         </center>
+         <bottom>
+            <HBox alignment="TOP_RIGHT" prefHeight="39.0" prefWidth="646.0" BorderPane.alignment="CENTER">
+               <children>
+                   <Button fx:id="changeInfo" mnemonicParsing="false" onAction="#goToChange" prefHeight="39.0" prefWidth="228.0" style="-fx-background-color: white;" text="Change My Login Info">
+                       <font>
+                           <Font name="Arial Black" size="16.0" />
+                       </font>
+                   </Button>
+                  <Button fx:id="logout" mnemonicParsing="false" onAction="#Logout" prefHeight="48.0" prefWidth="84.0" style="-fx-background-color: lightblue;" text="Logout">
+                     <font>
+                        <Font name="Arial Black" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+
+    </children>
+</AnchorPane>

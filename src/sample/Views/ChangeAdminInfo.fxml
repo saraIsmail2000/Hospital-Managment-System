@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minWidth="557.6092529296875" prefHeight="459.9998779296875" prefWidth="557.6092529296875" style="-fx-background-image: url('file:///C:/Users/HP-PC/Desktop/Hospital%20pics/login.jpg'); -fx-background-size: cover" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.AdminProfile">
+    <children>
+      <VBox prefHeight="57.0" prefWidth="558.0" AnchorPane.bottomAnchor="403.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="64.0" prefWidth="558.0" style="-fx-background-color: lightblue;">
+               <children>
+                  <Label layoutY="10.0" prefHeight="38.0" prefWidth="299.0" text="Change My Login Info">
+                     <font>
+                        <Font name="Bell MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+        <HBox alignment="CENTER" layoutY="57.0" prefHeight="403.0" prefWidth="558.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="57.0">
+            <children>
+                <VBox alignment="CENTER" prefHeight="459.9998779296875" prefWidth="237.6092529296875">
+                    <children>
+                        <Label prefWidth="269.0" style="-fx-background-color: white; -fx-alignment: center; -fx-height: 200px; -fx-width: 50%; -fx-padding: 5px; -fx-border-insets: 5px; -fx-background-insets: 5px; -fx-font: normal bold 20px 'serif'; -fx-border: 2px solid black;" text="Username :" />
+                        <TextField fx:id="username" prefWidth="200.0" style="-fx-background-color: white; -fx-text-fill: gray; -fx-height: 200px; -fx-width: 50%; -fx-padding: 5px; -fx-border-insets: 5px; -fx-background-insets: 5px; -fx-font: normal bold 20px 'serif'; -fx-border: 2px solid black; -fx-alignment: center;" />
+                        <Label prefWidth="273.0" style="-fx-background-color: white; -fx-alignment: center; -fx-height: 200px; -fx-width: 50%; -fx-padding: 5px; -fx-border-insets: 5px; -fx-background-insets: 5px; -fx-font: normal bold 20px 'serif'; -fx-border: 2px solid black;" text="Password">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                        <TextField fx:id="password" prefWidth="200.0" style="-fx-background-color: white; -fx-text-fill: gray; -fx-height: 200px; -fx-width: 50%; -fx-padding: 5px; -fx-border-insets: 5px; -fx-background-insets: 5px; -fx-font: normal bold 20px 'serif'; -fx-border: 2px solid black; -fx-alignment: center;" />
+                        <Button mnemonicParsing="false" onAction="#update" prefHeight="36.0" prefWidth="109.0" style="-fx-background-color: lightblue; -fx-alignment: center; -fx-height: 200px; -fx-width: 50%; -fx-padding: 5px; -fx-border-insets: 5px; -fx-background-insets: 5px; -fx-font: normal bold 20px 'serif'; -fx-border: 2px solid black;" text="Update" />
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <VBox alignment="BOTTOM_LEFT" layoutY="442.0" prefHeight="25.0" prefWidth="558.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="442.0">
+            <children>
+                <Button fx:id="back" mnemonicParsing="false" onAction="#back" prefHeight="17.0" prefWidth="70.0" style="-fx-background-color: black;" text="Back" textFill="#f8f7f7">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

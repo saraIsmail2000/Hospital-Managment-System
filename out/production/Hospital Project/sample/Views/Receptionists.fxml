@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600" prefWidth="800" style="-fx-background-color : white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.ReceptionistsManagingController">
+    <children>
+        <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <tabs>
+                <Tab style="-fx-background-color : lightblue;&#10;" text="Add Receptionist">
+                    <content>
+                       
+                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-image: url('file:///C:/Users/HP-PC/Desktop/Hospital%20pics/38331689-reception-desk-in-office-or-hotel-with-people-in-it-illustrated-background.jpg'); -fx-background-size: cover;">
+                            
+                            <Pane layoutX="-14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.77" prefHeight="417.0" prefWidth="621.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+                                <children>
+                                    <AnchorPane prefHeight="51.0" prefWidth="2095.0" style="-fx-background-color: black;">
+                                        <children>
+                                            <Label alignment="CENTER" layoutX="14.0" layoutY="8.0" text="Add Receptionist" textFill="#fffdfd">
+                                                <font>
+                                                    <Font size="24.0" />
+                                                </font>
+                                            </Label>
+                                        </children>
+                                    </AnchorPane>
+                                    <Label layoutX="5.0" layoutY="215.0" prefHeight="35.0" prefWidth="92.0" text="username">
+                                        <font>
+                                            <Font name="System Bold" size="18.0" />
+                                        </font>
+                                    </Label>
+                                    <Label layoutX="11.0" layoutY="71.0" prefHeight="42.0" prefWidth="99.0" text="Full name">
+                                        <font>
+                                            <Font name="System Bold" size="18.0" />
+                                        </font>
+                                    </Label>
+                                    <TextField fx:id="fullname" layoutX="116.0" layoutY="78.0" prefHeight="27.0" prefWidth="159.0" />
+                                    <RadioButton layoutX="132.0" layoutY="113.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="106.0" text="male" toggleGroup="$gender">
+                                        <font>
+                                            <Font size="18.0" />
+                                        </font>
+                                        <toggleGroup>
+                                            <ToggleGroup fx:id="gender" />
+                                        </toggleGroup>
+                                    </RadioButton>
+                                    <RadioButton layoutX="132.0" layoutY="155.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="106.0" text="female" toggleGroup="$gender">
+                                        <font>
+                                            <Font size="18.0" />
+                                        </font>
+                                    </RadioButton>
+                                    <Label layoutX="14.0" layoutY="113.0" prefHeight="42.0" prefWidth="118.0" text="Gender">
+                                        <font>
+                                            <Font name="System Bold" size="18.0" />
+                                        </font>
+                                    </Label>
+                                    <Label layoutX="289.0" layoutY="74.0" prefHeight="35.0" prefWidth="140.0" text="Phone Number">
+                                        <font>
+                                            <Font name="System Bold" size="18.0" />
+                                        </font>
+                                    </Label>
+                                    <TextField fx:id="phoneNum" layoutX="436.0" layoutY="78.0" prefHeight="27.0" prefWidth="165.0" />
+                                    <Label layoutX="314.0" layoutY="219.0" prefHeight="15.0" prefWidth="90.0" text="password">
+                                        <font>
+                                            <Font name="System Bold" size="18.0" />
+                                        </font>
+                                    </Label>
+                                    <TextField fx:id="username" layoutX="134.0" layoutY="220.0" prefHeight="25.0" prefWidth="165.0" />
+                                    <Label layoutX="5.0" layoutY="328.0" prefHeight="27.0" prefWidth="111.0" text="Date of birth">
+                                        <font>
+                                            <Font name="System Bold" size="18.0" />
+                                        </font>
+                                    </Label>
+                                    <DatePicker fx:id="birthDay" layoutX="137.0" layoutY="329.0" prefHeight="25.0" prefWidth="165.0" />
+                                    <Label layoutX="5.0" layoutY="272.0" prefHeight="17.0" prefWidth="118.0" text="Start Date">
+                                        <font>
+                                            <Font name="System Bold" size="18.0" />
+                                        </font>
+                                    </Label>
+                                    <DatePicker fx:id="startDate" layoutX="136.0" layoutY="273.0" prefHeight="25.0" prefWidth="168.0" />
+                                    <Button fx:id="apply" layoutX="176.0" layoutY="449.0" mnemonicParsing="false" onAction="#AddReceptionist" prefHeight="42.0" prefWidth="125.0" style="-fx-background-color: black;" text="Apply" textFill="#f8f4f4">
+                                        <font>
+                                            <Font name="System Bold" size="18.0" />
+                                        </font>
+                                    </Button>
+                                    <PasswordField fx:id="password" layoutX="429.0" layoutY="220.0" prefHeight="25.0" prefWidth="158.0" />
+                           <Label layoutX="14.0" layoutY="381.0" text="Address">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font></Label>
+                           <TextField fx:id="address" layoutX="135.0" layoutY="382.0" prefHeight="25.0" prefWidth="169.0" />
+
+
+                                    <VBox alignment="BOTTOM_LEFT" layoutY="539.0" prefHeight="32.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="539.0">
+                                        <children>
+                                            <Button fx:id="back" mnemonicParsing="false" onAction="#back" prefHeight="22.0" prefWidth="60.0" style="-fx-background-color: black;" text="Back" textFill="#f8f7f7">
+                                                <font>
+                                                    <Font name="System Bold" size="12.0" />
+                                                </font>
+                                            </Button>
+                                        </children>
+                                    </VBox>
+                                </children>
+                            </Pane>
+
+                        </AnchorPane>
+
+
+                    </content>
+                </Tab>
+                <Tab style="-fx-background-color : lightblue;" text="View Working Receptionists">
+                    <content>
+                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <TableView fx:id="RecTable" editable="true" prefHeight="450.0" prefWidth="680.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+
+                                <columns>
+                                    
+                                    <TableColumn fx:id="Fullname" prefWidth="116.0" text="Full Name" />
+                                    <TableColumn fx:id="Gender" prefWidth="86.0" text="Gender" />
+                                    <TableColumn fx:id="Phone" prefWidth="111.0" text="Phone Number" />
+                                    <TableColumn fx:id="Address" prefWidth="97.0" text="Address" />
+                                    <TableColumn fx:id="Startdate" prefWidth="101.0" text="Joining Date" />
+                                    <TableColumn fx:id="Birthday" prefWidth="96.0" text="BirthDay" />
+
+                                </columns>
+                            </TableView>
+                            <VBox alignment="BOTTOM_LEFT" layoutY="539.0" prefHeight="32.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="539.0">
+                                <children>
+                                    <Button fx:id="Back" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: black;" text="Back" textFill="#f8f7f7">
+                                        <font>
+                                            <Font name="System Bold" size="12.0" />
+                                        </font>
+                                    </Button>
+                                </children>
+                            </VBox>
+
+                        </AnchorPane>
+
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

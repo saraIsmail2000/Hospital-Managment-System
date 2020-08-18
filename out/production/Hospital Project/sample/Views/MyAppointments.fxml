@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.MyAppointments">
+   <children>
+      <AnchorPane prefHeight="40.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="57.0" prefWidth="600.0" text="My Appointments" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table" layoutX="100.0" layoutY="49.0" prefHeight="351.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="49.0">
+        <columns>
+          <TableColumn fx:id="Pname" prefWidth="185.0" text="Patient Name" />
+            <TableColumn fx:id="phone" prefWidth="107.0" text="Patient Phone" />
+          <TableColumn fx:id="date" prefWidth="128.0" text="Date" />
+            <TableColumn fx:id="time" prefWidth="107.0" text="Time" />
+        </columns>
+      </TableView>
+       <VBox alignment="BOTTOM_LEFT" layoutY="640.0" prefHeight="35.0" prefWidth="1269.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="640.0">
+           <children>
+               <Button fx:id="back" mnemonicParsing="false" onAction="#goBack" prefHeight="28.0" prefWidth="66.0" style="-fx-background-color: black;" text="Back" textFill="#f8f7f7">
+                   <font>
+                       <Font name="System Bold" size="12.0" />
+                   </font>
+               </Button>
+           </children>
+       </VBox>
+   </children>
+</AnchorPane>

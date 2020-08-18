@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pane" blendMode="SRC_OVER" cache="true" cacheHint="SPEED" disable="false" minHeight="503.0" prefHeight="538.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.LoginController">
+    <children>
+      <Pane prefHeight="367.0" prefWidth="586.0" style="-fx-background-image: url('file:///C:/Users/HP-PC/Desktop/Hospital%20pics/maxresdefault.jpg'); -fx-background-size: cover" AnchorPane.bottomAnchor="171.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <VBox fx:id="vbvox" alignment="CENTER" layoutX="-2.0" layoutY="415.0" minWidth="-1.0" prefHeight="132.0" prefWidth="586.0" AnchorPane.bottomAnchor="-9.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="415.0">
+            <children>
+                <Button fx:id="admin" onAction="#goToAdminLogin" contentDisplay="CENTER" minWidth="-1.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="44.0" prefWidth="204.0" scaleX="1.0" style="-fx-background-color: darkred; -fx-text-fill: white; -fx-alignment: center; -fx-height: 200px; -fx-width: 50%; -fx-padding: 5px; -fx-border-insets: 5px; -fx-background-insets: 5px; -fx-font: normal bold 25px 'serif'; -fx-border: 2px solid black;" text="Admin" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                    <VBox.margin>
+                        <Insets fx:id="x1" />
+                    </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+                </Button>
+                <Button fx:id="doc" onAction="#goToDoctorLogin" minHeight="27.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="204.0" style="-fx-background-color: darkred; -fx-text-fill: white; -fx-alignment: center; -fx-height: 200px; -fx-width: 50%; -fx-padding: 5px; -fx-border-insets: 5px; -fx-background-insets: 5px; -fx-font: normal bold 25px 'serif'; -fx-border: 2px solid black;" text="Doctor" VBox.margin="$x1" VBox.vgrow="ALWAYS" />
+                <Button fx:id="rec" onAction="#goToRecLogin" minHeight="29.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="203.0" style="-fx-background-color: darkred; -fx-text-fill: white; -fx-alignment: center; -fx-height: 200px; -fx-width: 50%; -fx-padding: 5px; -fx-border-insets: 5px; -fx-background-insets: 5px; -fx-font: normal bold 25px 'serif'; -fx-border: 2px solid black;" text="Receptionist" VBox.vgrow="ALWAYS" />
+            </children>
+        </VBox>
+        <HBox alignment="BOTTOM_LEFT" layoutX="2.0" layoutY="198.0" prefHeight="42.0" prefWidth="582.5" AnchorPane.bottomAnchor="298.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="1.5" AnchorPane.topAnchor="198.0">
+            <children>
+                <Label fx:id="loginLabel" alignment="CENTER_LEFT" graphicTextGap="4.0" style="-fx-background-color: darkred;" styleClass="null" text="Login as" textFill="#f8f6f6" textOverrun="ELLIPSIS" underline="false">
+                    <font>
+                        <Font name="Comic Sans MS" size="30.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+    </children>
+    
+</AnchorPane>

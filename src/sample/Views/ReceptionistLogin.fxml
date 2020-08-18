@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="secondPane" prefHeight="460.0" prefWidth="564.0" style="-fx-background-image: url('file:///C:/Users/HP-PC/Desktop/Hospital%20pics/unnamed%20(1).jpg'); -fx-background-size: cover" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.LoginController">
+    <children>
+        <HBox alignment="CENTER" layoutX="155.0" prefHeight="460.0" prefWidth="198.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="155.0" AnchorPane.rightAnchor="211.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <VBox alignment="CENTER" prefHeight="460.0" prefWidth="211.0">
+                    <children>
+                        <AnchorPane fx:id="loginPanel" opacity="0.47" prefHeight="244.0" prefWidth="200.0" style="-fx-background-color: black; -fx-border-insets: : 5px; -fx-background-insets: : 5px;">
+                            <children>
+                                <Button fx:id="RecLogin" layoutX="63.0" layoutY="171.0" mnemonicParsing="false" onAction="#goToRecPortal" prefWidth="123.0" style="-fx-background-color: white;" text="Login" textFill="#171616ed">
+                                    <font>
+                                        <Font name="System Bold Italic" size="13.0" />
+                                    </font>
+                                </Button>
+                                <PasswordField fx:id="RecPass" layoutX="34.0" layoutY="128.0" prefWidth="156.0" />
+                                <TextField fx:id="RecUser" layoutX="34.0" layoutY="95.0" prefWidth="155.99990000000253" />
+                                <Label fx:id="panel" layoutX="14.0" layoutY="54.0" prefHeight="21.0" prefWidth="167.0" style="-fx-background-color: white;" text="Receptionist Login Panel">
+                                    <font>
+                                        <Font name="System Italic" size="15.0" />
+                                    </font>
+                                    <textFill>
+                                        <Color red="0.200" green="0.000" blue="0.096" fx:id="x1" />
+                                    </textFill>
+                                </Label>
+                                <Label alignment="CENTER_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="36.0" prefWidth="167.0" style="-fx-background-color: white;" text="Login Here" textAlignment="CENTER" textFill="$x1">
+                                    <font>
+                                        <Font name="System Bold Italic" size="25.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fitHeight="27.999984741210938" fitWidth="27.999984741210938" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../images/profileicon.jpg" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="3.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../images/lock.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+
+        <VBox alignment="BOTTOM_LEFT" layoutY="442.0" prefHeight="39.0" prefWidth="688.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="442.0">
+            <children>
+                <Button fx:id="back" onAction="#back" mnemonicParsing="false" prefHeight="37.0" prefWidth="66.0" style="-fx-background-color: black;" text="Back" textFill="#f8f7f7">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
